@@ -1,0 +1,95 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2026-04-24T18:21:28.972Z",
+    "end": "2026-04-24T18:21:29.494Z",
+    "duration": 522,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "9820b448-57ec-4d50-86d0-3bfd75c00e12",
+      "title": "",
+      "fullFile": "cypress\\e2e\\auth\\login.cy.js",
+      "file": "cypress\\e2e\\auth\\login.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "An uncaught error was detected outside of a test",
+          "fullTitle": "An uncaught error was detected outside of a test",
+          "timedOut": null,
+          "duration": 487,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": "[\n  {\n    \"title\": \"cypress-mochawesome-reporter-videos-failed\",\n    \"value\": \"cypress\\\\e2e\\\\auth\\\\login.cy.js\"\n  },\n  {\n    \"title\": \"cypress-mochawesome-reporter-screenshots\",\n    \"value\": [\n      [\n        \"\\\\auth\\\\login.cy.js\\\\An uncaught error was detected outside of a test (failed).png\"\n      ]\n    ]\n  }\n]",
+          "code": "throw err;",
+          "err": {
+            "message": "CypressError: The following error originated from your test code, not from Cypress.\n\n  > Cannot call `cy.get()` outside a running test.\n\nThis usually happens when you accidentally write commands outside an `it(...)` test.\n\nIf that is the case, just move these commands inside an `it(...)` test.\n\nCheck your test file for errors.\n\nWhen Cypress detects uncaught errors originating from your test code it will automatically fail the current test.\n\nCypress could not associate this error to any specific test.\n\nWe dynamically generated a new test to display this failure.\n\nhttps://on.cypress.io/cannot-execute-commands-outside-test",
+            "estack": "CypressError: The following error originated from your test code, not from Cypress.\n\n  > Cannot call `cy.get()` outside a running test.\n\nThis usually happens when you accidentally write commands outside an `it(...)` test.\n\nIf that is the case, just move these commands inside an `it(...)` test.\n\nCheck your test file for errors.\n\nWhen Cypress detects uncaught errors originating from your test code it will automatically fail the current test.\n\nCypress could not associate this error to any specific test.\n\nWe dynamically generated a new test to display this failure.\n\nhttps://on.cypress.io/cannot-execute-commands-outside-test\n    at ensureRunnable (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:145839:58)\n    at cy.<computed> [as get] (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:146429:7)\n    at eval (webpack://cypressqa/./cypress/e2e/auth/login.cy.js:35:3)\n    at eval (https://www.saucedemo.com/__cypress/tests?p=cypress\\e2e\\auth\\login.cy.js:300:3)\n    at eval (https://www.saucedemo.com/__cypress/tests?p=cypress\\e2e\\auth\\login.cy.js:302:12)\n    at eval (<anonymous>)\n    at <unknown> (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:114021:23)\n    at tryCatcher (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:1777:23)\n    at Object.gotValue (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:6446:18)\n    at Object.gotAccum (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:6435:25)\n    at Object.tryCatcher (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise._settlePromiseFromHandler (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:1489:31)\n    at Promise._settlePromise (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:1546:18)\n    at Promise._settlePromise0 (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:1591:10)\n    at Promise._settlePromises (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:1671:18)\n    at _drainQueueStep (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:2377:12)\n    at _drainQueue (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:2370:9)\n    at Async._drainQueues (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:2386:5)\n    at Async.drainQueues (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:2256:14)",
+            "diff": null
+          },
+          "uuid": "87d8315a-ae42-40df-902d-e789ac8e8dd4",
+          "parentUUID": "9820b448-57ec-4d50-86d0-3bfd75c00e12",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [],
+      "failures": [
+        "87d8315a-ae42-40df-902d-e789ac8e8dd4"
+      ],
+      "pending": [],
+      "skipped": [],
+      "duration": 487,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress\\reports\\.jsons",
+        "charts": true,
+        "reportPageTitle": "SauceDemo Test Report",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "saveAllAttempts": false,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.3.2"
+    }
+  }
+}

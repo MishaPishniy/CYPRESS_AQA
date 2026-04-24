@@ -1,0 +1,167 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-04-24T18:20:50.999Z",
+    "end": "2026-04-24T18:20:56.944Z",
+    "duration": 5945,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "1fde4e2c-ca79-4c89-9410-672cea27164d",
+      "title": "",
+      "fullFile": "cypress\\e2e\\testAQA\\saucedemo.cy.js",
+      "file": "cypress\\e2e\\testAQA\\saucedemo.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6d4495dd-b825-453e-af44-51a362e30926",
+          "title": "Test login saucedemo.com",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should /inventory.html",
+              "fullTitle": "Test login saucedemo.com should /inventory.html",
+              "timedOut": null,
+              "duration": 1369,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\testAQA\\\\saucedemo.cy.js\"\n}",
+              "code": "cy.url().should(\"contain\", \"/inventory.html\");",
+              "err": {},
+              "uuid": "2862c56d-e75a-4e69-97f3-e56db8d220f8",
+              "parentUUID": "6d4495dd-b825-453e-af44-51a362e30926",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should .inventory_list",
+              "fullTitle": "Test login saucedemo.com should .inventory_list",
+              "timedOut": null,
+              "duration": 1046,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\testAQA\\\\saucedemo.cy.js\"\n}",
+              "code": "cy.get('.inventory_list').should('be.visible');",
+              "err": {},
+              "uuid": "e5efeeab-bd85-4e34-859f-5492b92c10d0",
+              "parentUUID": "6d4495dd-b825-453e-af44-51a362e30926",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should .inventory_list",
+              "fullTitle": "Test login saucedemo.com should .inventory_list",
+              "timedOut": null,
+              "duration": 2158,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\testAQA\\\\saucedemo.cy.js\"\n}",
+              "code": "cy.get('.inventory_item').should('be.visible');\ncy.get('.inventory_item').first().find('button');\ncy.contains('Products');\ncy.contains('.inventory_item_name', 'Sauce Labs Backpack');\ncy.contains('Add to cart').click();\ncy.get('.inventory_list').children().as('newBotton');\ncy.get('@newBotton').should('have.length', 6);\ncy.get('.inventory_item').should('have.length.greaterThan', 0);",
+              "err": {},
+              "uuid": "a6975856-d191-48f0-825e-5537bf157356",
+              "parentUUID": "6d4495dd-b825-453e-af44-51a362e30926",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Обираємо сортування Z-A",
+              "fullTitle": "Test login saucedemo.com Обираємо сортування Z-A",
+              "timedOut": null,
+              "duration": 1073,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\testAQA\\\\saucedemo.cy.js\"\n}",
+              "code": "cy.get('[data-test=\"product-sort-container\"]').select('za');\ncy.get('[data-test=\"product-sort-container\"]').should('have.value', 'za');",
+              "err": {},
+              "uuid": "297016ca-6a11-453a-9301-5b0868d804ba",
+              "parentUUID": "6d4495dd-b825-453e-af44-51a362e30926",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2862c56d-e75a-4e69-97f3-e56db8d220f8",
+            "e5efeeab-bd85-4e34-859f-5492b92c10d0",
+            "a6975856-d191-48f0-825e-5537bf157356",
+            "297016ca-6a11-453a-9301-5b0868d804ba"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5646,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress\\reports\\.jsons",
+        "charts": true,
+        "reportPageTitle": "SauceDemo Test Report",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "saveAllAttempts": false,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.3.2"
+    }
+  }
+}

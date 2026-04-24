@@ -1,0 +1,160 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 0,
+    "pending": 0,
+    "failures": 3,
+    "start": "2026-04-24T18:20:59.975Z",
+    "end": "2026-04-24T18:21:25.824Z",
+    "duration": 25849,
+    "testsRegistered": 3,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "626cad07-9512-4779-92c8-468a295f0ec5",
+      "title": "",
+      "fullFile": "cypress\\e2e\\testAQA\\select.cy.js",
+      "file": "cypress\\e2e\\testAQA\\select.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e271224c-1f4a-4837-86fc-e1d1bbe32f1b",
+          "title": "Test login saucedemo.com",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Обираємо сортування Z-A",
+              "fullTitle": "Test login saucedemo.com Обираємо сортування Z-A",
+              "timedOut": null,
+              "duration": 8876,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "[\n  {\n    \"title\": \"cypress-mochawesome-reporter-videos-failed\",\n    \"value\": \"cypress\\\\e2e\\\\testAQA\\\\select.cy.js\"\n  },\n  {\n    \"title\": \"cypress-mochawesome-reporter-screenshots\",\n    \"value\": [\n      [\n        \"\\\\testAQA\\\\select.cy.js\\\\Test login saucedemo.com -- Обираємо сортування Z-A (failed).png\"\n      ]\n    ]\n  }\n]",
+              "code": "cy.get('[data-test=\"product-sort-container\"]').select('za');\ncy.get('[data-test=\"product-sort-container\"]').should('have.value', 'za');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 6000ms: Expected to find element: `[data-test=\"product-sort-container\"]`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 6000ms: Expected to find element: `[data-test=\"product-sort-container\"]`, but never found it.\n    at Context.eval (webpack://cypressqa/./cypress/e2e/testAQA/select.cy.js:11:10)",
+                "diff": null
+              },
+              "uuid": "5fe31f5d-7f6d-4ee5-aede-705c4dbd0b6d",
+              "parentUUID": "e271224c-1f4a-4837-86fc-e1d1bbe32f1b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Обираємо сортування Z-A",
+              "fullTitle": "Test login saucedemo.com Обираємо сортування Z-A",
+              "timedOut": null,
+              "duration": 7644,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "[\n  {\n    \"title\": \"cypress-mochawesome-reporter-videos-failed\",\n    \"value\": \"cypress\\\\e2e\\\\testAQA\\\\select.cy.js\"\n  },\n  {\n    \"title\": \"cypress-mochawesome-reporter-screenshots\",\n    \"value\": [\n      [\n        \"\\\\testAQA\\\\select.cy.js\\\\Test login saucedemo.com -- Обираємо сортування Z-A (failed) (1).png\"\n      ]\n    ]\n  }\n]",
+              "code": "cy.get('[data-test=\"product-sort-container\"]').should('be.visible').select('za').should('have.value', 'za');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 6000ms: Expected to find element: `[data-test=\"product-sort-container\"]`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 6000ms: Expected to find element: `[data-test=\"product-sort-container\"]`, but never found it.\n    at Context.eval (webpack://cypressqa/./cypress/e2e/testAQA/select.cy.js:16:54)",
+                "diff": null
+              },
+              "uuid": "44109436-80d0-4107-9e0e-cbd658fff4f3",
+              "parentUUID": "e271224c-1f4a-4837-86fc-e1d1bbe32f1b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Перевіряємо список",
+              "fullTitle": "Test login saucedemo.com Перевіряємо список",
+              "timedOut": null,
+              "duration": 7185,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "[\n  {\n    \"title\": \"cypress-mochawesome-reporter-videos-failed\",\n    \"value\": \"cypress\\\\e2e\\\\testAQA\\\\select.cy.js\"\n  },\n  {\n    \"title\": \"cypress-mochawesome-reporter-screenshots\",\n    \"value\": [\n      [\n        \"\\\\testAQA\\\\select.cy.js\\\\Test login saucedemo.com -- Перевіряємо список (failed).png\"\n      ]\n    ]\n  }\n]",
+              "code": "cy.get('.inventory_item').then($items => {\n  expect($items.length).to.equal(6);\n});",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 6000ms: Expected to find element: `.inventory_item`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 6000ms: Expected to find element: `.inventory_item`, but never found it.\n    at Context.eval (webpack://cypressqa/./cypress/e2e/testAQA/select.cy.js:21:5)",
+                "diff": null
+              },
+              "uuid": "4eaad9f0-e133-4cb7-9ff5-716ef8a6224a",
+              "parentUUID": "e271224c-1f4a-4837-86fc-e1d1bbe32f1b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "5fe31f5d-7f6d-4ee5-aede-705c4dbd0b6d",
+            "44109436-80d0-4107-9e0e-cbd658fff4f3",
+            "4eaad9f0-e133-4cb7-9ff5-716ef8a6224a"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 23705,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress\\reports\\.jsons",
+        "charts": true,
+        "reportPageTitle": "SauceDemo Test Report",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "saveAllAttempts": false,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.3.2"
+    }
+  }
+}

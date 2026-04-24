@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-04-24T18:20:45.558Z",
+    "end": "2026-04-24T18:20:46.367Z",
+    "duration": 809,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "d072bb16-ec3c-467c-b06f-3d324af21f52",
+      "title": "",
+      "fullFile": "cypress\\e2e\\testAQA\\sauced2.cy.js",
+      "file": "cypress\\e2e\\testAQA\\sauced2.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9c121e07-ccc4-45fe-818a-40d4f535327d",
+          "title": "Команди",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Clear",
+              "fullTitle": "Команди Clear",
+              "timedOut": null,
+              "duration": 751,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\testAQA\\\\sauced2.cy.js\"\n}",
+              "code": "cy.visit('https://www.saucedemo.com/');\ncy.get('[name=\"user-name\"]').type('Text').clear();\ncy.get('#user-name').should('have.value', '');",
+              "err": {},
+              "uuid": "ed489efe-05ad-468b-9ecb-62db30646e5a",
+              "parentUUID": "9c121e07-ccc4-45fe-818a-40d4f535327d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ed489efe-05ad-468b-9ecb-62db30646e5a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 751,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress\\reports\\.jsons",
+        "charts": true,
+        "reportPageTitle": "SauceDemo Test Report",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "saveAllAttempts": false,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.3.2"
+    }
+  }
+}

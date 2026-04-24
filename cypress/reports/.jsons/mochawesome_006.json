@@ -1,0 +1,176 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 2,
+    "pending": 0,
+    "failures": 2,
+    "start": "2026-04-24T18:21:37.820Z",
+    "end": "2026-04-24T18:21:43.268Z",
+    "duration": 5448,
+    "testsRegistered": 4,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "912b8816-a4d4-4980-ac73-6b2fa9079a63",
+      "title": "",
+      "fullFile": "cypress\\e2e\\auth\\login3.cy.js",
+      "file": "cypress\\e2e\\auth\\login3.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "cb6d221d-14c0-4bd9-b1e6-18286f4034af",
+          "title": "Login to SauceDemo ",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Positiv Login",
+              "fullTitle": "Login to SauceDemo  Positiv Login",
+              "timedOut": null,
+              "duration": 1441,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\auth\\\\login3.cy.js\"\n}",
+              "code": "_LoginPage.default.login(_users.user.standardUser.username, _users.user.standardUser.password);",
+              "err": {},
+              "uuid": "cf152eed-1bae-47cc-802c-75e6b8fcc724",
+              "parentUUID": "cb6d221d-14c0-4bd9-b1e6-18286f4034af",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Invalid Login",
+              "fullTitle": "Login to SauceDemo  Invalid Login",
+              "timedOut": null,
+              "duration": 3079,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\auth\\\\login3.cy.js\"\n}",
+              "code": "_LoginPage.default.login(_users.user.invalidUser.username, _users.user.invalidUser.password);\n_LoginPage.default.verifyErrorMessage(\"Epic sadface: Username and password do not match any user in this service\");",
+              "err": {},
+              "uuid": "f912bd8d-45ac-4c75-878a-46b6eddc80ee",
+              "parentUUID": "cb6d221d-14c0-4bd9-b1e6-18286f4034af",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "ENV CONFIG Login",
+              "fullTitle": "Login to SauceDemo  ENV CONFIG Login",
+              "timedOut": null,
+              "duration": 453,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "[\n  {\n    \"title\": \"cypress-mochawesome-reporter-videos-failed\",\n    \"value\": \"cypress\\\\e2e\\\\auth\\\\login3.cy.js\"\n  },\n  {\n    \"title\": \"cypress-mochawesome-reporter-screenshots\",\n    \"value\": [\n      [\n        \"\\\\auth\\\\login3.cy.js\\\\Login to SauceDemo -- ENV CONFIG Login (failed).png\"\n      ]\n    ]\n  }\n]",
+              "code": "cy.env(['username', 'password']).then(env => {\n  _LoginPage.default.login(env.username, env.password);\n});",
+              "err": {
+                "message": "CypressError: `cy.type()` can only accept a string or number. You passed in: `undefined`\n\nhttps://on.cypress.io/type",
+                "estack": "CypressError: `cy.type()` can only accept a string or number. You passed in: `undefined`\n\nhttps://on.cypress.io/type\n    at Context.type (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:117521:68)\n    at wrapped (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:146308:19)\n    at <unknown> (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:152306:15)\n    at tryCatcher (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise._settlePromiseFromHandler (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:1489:31)\n    at Promise._settlePromise (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:1546:18)\n    at Promise._settlePromiseCtx (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:1583:10)\n    at _drainQueueStep (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:2381:12)\n    at _drainQueue (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:2370:9)\n    at Async._drainQueues (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:2386:5)\n    at Async.drainQueues (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:2256:14)",
+                "diff": null
+              },
+              "uuid": "efd436a0-469b-47ca-95ad-e19e2b66d667",
+              "parentUUID": "cb6d221d-14c0-4bd9-b1e6-18286f4034af",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": " JSON CONFIG Login",
+              "fullTitle": "Login to SauceDemo   JSON CONFIG Login",
+              "timedOut": null,
+              "duration": 284,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "[\n  {\n    \"title\": \"cypress-mochawesome-reporter-videos-failed\",\n    \"value\": \"cypress\\\\e2e\\\\auth\\\\login3.cy.js\"\n  },\n  {\n    \"title\": \"cypress-mochawesome-reporter-screenshots\",\n    \"value\": [\n      [\n        \"\\\\auth\\\\login3.cy.js\\\\Login to SauceDemo --  JSON CONFIG Login (failed).png\"\n      ]\n    ]\n  }\n]",
+              "code": "const username = Cypress.env(\"username\");\nconst password = Cypress.env(\"password\");\n_LoginPage.default.login(username, password);",
+              "err": {
+                "message": "CypressError: `Cypress.env()` does not work when `allowCypressEnv` is set to `false`. Please migrate to `cy.env()` or leverage other stateful methods to manage variables. The variable being accessed was: `username`\n\nhttps://on.cypress.io/cypress-env-migration",
+                "estack": "CypressError: `Cypress.env()` does not work when `allowCypressEnv` is set to `false`. Please migrate to `cy.env()` or leverage other stateful methods to manage variables. The variable being accessed was: `username`\n\nhttps://on.cypress.io/cypress-env-migration\n    at cypressErr (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:78379:18)\n    at Object.errByPath (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:78437:10)\n    at $Cypress.failCypressEnvWithWarning [as env] (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:41589:81)\n    at Context.eval (webpack://cypressqa/./cypress/e2e/auth/login3.cy.js:34:33)\n    at runnable.fn (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:146581:19)\n    at callFn (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:165745:21)\n    at Runnable.run (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:165732:7)\n    at <unknown> (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:171830:30)\n    at PassThroughHandlerContext.finallyHandler (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:4042:23)\n    at PassThroughHandlerContext.tryCatcher (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise._settlePromiseFromHandler (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:1489:31)\n    at Promise._settlePromise (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:1546:18)\n    at Promise._settlePromise0 (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:1591:10)\n    at Promise._settlePromises (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:1671:18)\n    at _drainQueueStep (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:2377:12)\n    at _drainQueue (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:2370:9)\n    at Async._drainQueues (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:2386:5)\n    at Async.drainQueues (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:2256:14)",
+                "diff": null
+              },
+              "uuid": "fdfca60d-6070-4d94-a376-22d29266e585",
+              "parentUUID": "cb6d221d-14c0-4bd9-b1e6-18286f4034af",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "cf152eed-1bae-47cc-802c-75e6b8fcc724",
+            "f912bd8d-45ac-4c75-878a-46b6eddc80ee"
+          ],
+          "failures": [
+            "efd436a0-469b-47ca-95ad-e19e2b66d667",
+            "fdfca60d-6070-4d94-a376-22d29266e585"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 5257,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress\\reports\\.jsons",
+        "charts": true,
+        "reportPageTitle": "SauceDemo Test Report",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "saveAllAttempts": false,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.3.2"
+    }
+  }
+}
