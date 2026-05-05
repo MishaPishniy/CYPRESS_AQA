@@ -3,7 +3,7 @@ const getCompareSnapshotsPlugin = require("cypress-image-diff-js/plugin");
 
 const environments = {
   test: {
-    baseUrl: "https://www.saucedemo.com",
+    baseUrl: "https://www.GOOGLE.com",
   },
   stage: {
     baseUrl: "https://www.saucedemo2.com",
