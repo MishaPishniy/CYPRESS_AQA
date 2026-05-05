@@ -20,7 +20,7 @@ describe("Test login saucedemo.com", () => {
   });
 
   it("should /inventory.html", () => {
-    
+    cy.log('========Вводимо inventory===========');
     cy.url().should("contain", "/inventory.html");
   });
 
@@ -29,14 +29,20 @@ describe("Test login saucedemo.com", () => {
     cy.get('.inventory_list').should('be.visible');
   });
 
-    it("should .inventory_list", () => {
+    it.only("should .inventory_list", () => {
 
-    cy.get('.inventory_item').should('be.visible');
+    cy.log('========Вводимо inventory===========');
+    cy.get('.inventory_item').debug().should('be.visible');
+    cy.log('========Вводимо inventory===========');
     cy.get('.inventory_item').first().find('button');
     cy.contains('Products')
     cy.contains('.inventory_item_name' , 'Sauce Labs Backpack')
-    cy.contains('Add to cart').click()
-    
+    cy.log('========Вводимо inventory===========');
+    cy.contains('Add to cart').debug().click()
+
+     cy.pause()
+
+    cy.log('========Вводимо inventory===========');
     cy.get('.inventory_list').children().as('newBotton')
     cy.get('@newBotton').should('have.length' , 6)
     cy.get('.inventory_item').should('have.length.greaterThan', 0);
