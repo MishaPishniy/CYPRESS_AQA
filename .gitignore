@@ -1,0 +1,4 @@
+/node_modules
+/cypress-image-diff-screenshots
+/cypress-image-diff-html-report
+/cypress/videos
