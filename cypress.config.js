@@ -1,4 +1,5 @@
 const { defineConfig } = require("cypress");
+const getCompareSnapshotsPlugin = require("cypress-image-diff-js/plugin");
 
 const environments = {
   test: {
@@ -14,12 +15,12 @@ const environments = {
 
 module.exports = defineConfig({
   allowCypressEnv: false,
-  
-  reporter: 'cypress-mochawesome-reporter',
-   reporterOptions: {
-    reportDir: 'cypress/reports',
+
+  reporter: "cypress-mochawesome-reporter",
+  reporterOptions: {
+    reportDir: "cypress/reports",
     charts: true,
-    reportPageTitle: 'SauceDemo Test Report',
+    reportPageTitle: "SauceDemo Test Report",
     embeddedScreenshots: true,
     inlineAssets: true,
     saveAllAttempts: false,
@@ -42,6 +43,8 @@ module.exports = defineConfig({
       }
 
       config.baseUrl = selectedEnv.baseUrl;
+
+      getCompareSnapshotsPlugin(on, config);
 
       return config;
     },

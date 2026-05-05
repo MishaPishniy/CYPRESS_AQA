@@ -11,7 +11,11 @@
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
+    "@percy/cli": "^1.31.12",
+    "@percy/cypress": "^3.1.8",
     "cypress": "^15.13.1",
+    "cypress-image-diff-js": "^2.8.0",
+    "cypress-mailosaur": "^5.0.0",
     "cypress-mochawesome-reporter": "^4.0.2",
     "prettier": "^3.8.2"
   }
